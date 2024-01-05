@@ -1,0 +1,111 @@
+Material design 3 Para el diseño
+1. https://www.flaticon.es/icono-gratis/mas_7263361?term=plus&page=2&position=16&origin=search&related_id=7263361
+1.1. Ingles https://inglessinfronteras.co/tablero/perfil
+1.2. Profesor segunda parte: twitch.tv/sigmotoa
+2. Como diseñar Text Fields:Material disigne
+	1 - Ir al buil.gradle.kts(Module:app)
+	2 - Agregar la siguiente linea: implementation("com.google.android.material:material:1.9.0")  -alpha03
+	3 - Ir a la carpete themes - themes.xml y cambiar nombre de estilos a: parent="Theme.MaterialComponents.Light.NoActionBar"
+	4 - Ir al activity_main y escribir TextInpu... y seleccionar la opción: com.google.android.material.textfield.TextInputLayout
+
+<EditText
+        android:id="@+id/inpNombre"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:hint="@string/inp_nombre"
+        android:textColorHint="#673AB7"
+        android:importantForAutofill="no"
+        android:padding="16dp"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/inpApellidos"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:hint="@string/inp_apellidos"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        android:padding="16dp"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/inpEdad"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:hint="@string/inp_edad"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        android:padding="16dp"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/inpDireccion"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:hint="@string/inp_direccion"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        android:padding="16dp"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/inpEmail"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:hint="@string/inp_email"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        android:padding="16dp"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/inpTelefono"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:hint="@string/inp_telefono"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        android:padding="16dp"
+        android:layout_marginBottom="25dp"/>
+
+https://iconos8.es/icons/set/correo
+https://www.flaticon.es/icono-gratis/mensaje_7146740?term=correo&page=1&position=10&origin=search&related_id=7146740
+
+https://www.pngwing.com/
+
+
+https://codeshare.io/wnkqKB
+
+https://www.materialpalette.com/
+
+https://coolors.co/6b2d5c-ffa630-ff5376-3abeff-091e05
+
+
+
+
+
+

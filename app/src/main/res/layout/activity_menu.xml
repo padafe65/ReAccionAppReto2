@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reforestar2"
+    android:onClick="consejo"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/etx_titulo2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/byzantium"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/etx_titulo2"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/etx_tituloMenu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/etx_menu"
+        android:textColor="@color/pink_crayola"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etx_titulo2" />
+
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etx_titulo2">
+
+        <Button
+            android:id="@+id/btnCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="21dp"
+            android:alpha="@dimen/material_emphasis_high_type"
+            android:background="@drawable/btn1"
+            android:padding="7dp"
+            android:text="@string/btnCategorías1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEstadistica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/btn1"
+            android:padding="7dp"
+            android:text="@string/btnEstadistica"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnConsejos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/btn1"
+            android:padding="7dp"
+            android:text="@string/btnConsejos"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgbSalida"
+        android:layout_width="85dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="48dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/salida2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">ReforAccion</string>
+    <string name="etx_titulo">Hello My Name is ReAccion</string>
+    <string name="etx_titulo0">By  Cesar Forero Rincón - Asesor Ing Alirio Ferreira Rojas</string>
+    <string name="etx_titulo2">ReAccion</string>
+    <string name="etx_recuperar">Recuperar Acceso</string>
+    <string name="etx_estadistica">Estadística de árboles</string>
+    <string name="etx_consejos">Consejos</string>
+    <string name="etx_menu">Menú de opciones</string>
+    <string name="chb_termino">Término y condiciones</string>
+    <string name="chb_traDatos">Tratamiento de datos</string>
+    <string name="imgdesc1">Imagen fondo</string>
+    <string name="imgdesc2">Imagen fecha</string>
+    <string name="imgdesc3">Imagen tipo plantaa</string>
+    <string name="imgdesc4">Imagen boton</string>
+    <string name="inpDocumento">Digite contraseña</string>
+    <string name="inpUsuario">Nombre usuario</string>
+    <string name="inpCostoPlanta">0.0</string>
+    <string name="inpForgotPassword">Ingrese su correo</string>
+    <string name="inpNick">Nick name</string>
+    <string name="btnCategorías1">Categorías</string>
+    <string name="btnEstadistica">Estadística</string>
+    <string name="btnConsejos">Consejos</string>
+    <string name="btnComenzar">Comenzar</string>
+    <string name="btn_inicio">INICIAR SESIÓN</string>
+    <string name="btn_arbol">GUARDAR ÁRBOL</string>
+    <string name="btn_recuperar">RECUPERAR</string>
+    <string name="btn">Añadir</string>
+    <string name="btnCargasEstad">Mostrar estadística</string>
+    <string name="txt_forgot">¿Olvidaste tu contraseña?</string>
+    <string name="txt_register">Regístrate</string>
+    <string name="etxZonaMasPlantas">Zona con mayor siembra</string>
+    <string name="btnCategorias">Registro de cuidado de plantas</string>
+    <string name="btnConsultar">Consultar</string>
+    <string name="btnRegistrarUsuario">Registrar Usuario</string>
+    <string name="inptCantidadPlantas">Cantidad de árboles sembrados</string>
+    <string name="inptLaPlanta">Nombre del árbol</string>
+    <string name="etxDate">dd/mm/yyyy - fecha plantación</string>
+    <string name="txtSeleccionEspecies">Selección de especies adecuadas</string>
+    <string name="txtCuidadoArboles">Cuidado de los árboles plantados</string>
+    <string name="txttecnicaPlantar">Técnica de plantación</string>
+    <string name="txtCorreo">Ingrese su correo</string>
+    <string name="Name">Nombre producto</string>
+    <string name="Cantidad">Cantidad producto</string>
+    <string name="Precio">Precio producto</string>
+    <string name="Name1">Nombre</string>
+    <string name="fecha">Fecha</string>
+    <string name="promedioArboles">Promedio</string>
+    <string name="costoPromedio">Costo</string>
+    <string name="zonaSiembra">Zona</string>
+    <string name="Venta">0</string>
+
+
+</resources>

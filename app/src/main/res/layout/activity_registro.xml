@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro"
+    android:background="@drawable/planta3">
+
+    <TextView
+        android:id="@+id/etx_titulo3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/byzantium"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/etx_titulo2"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="600dp"
+    android:orientation="vertical"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/etx_titulo3">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/etx_titulo3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inpElArbol"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="7dp"
+            android:hint="@string/inptLaPlanta"
+            android:textColorHint="@color/dark_green"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="24dp"
+            app:boxCornerRadiusTopStart="24dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="7"
+            app:endIconMode="clear_text"
+            app:helperText="Árbol sembrado"
+            app:helperTextTextColor="#500606"
+            app:startIconDrawable="@drawable/helecho"
+            app:startIconTint="#053C07"
+            tools:ignore="TextSizeCheck">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inpArbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtCantidad"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="7dp"
+            android:hint="@string/inptCantidadPlantas"
+            android:textColorHint="@color/dark_green"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="24dp"
+            app:boxCornerRadiusTopStart="24dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="7"
+            app:endIconMode="clear_text"
+            app:helperText="Arboles sembrados"
+            app:helperTextTextColor="#500606"
+            app:startIconDrawable="@drawable/helecho"
+            app:startIconTint="#053C07"
+            tools:ignore="TextSizeCheck">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inptCantidadArbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/dark_green"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="7dp">
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/etxDate"
+            android:inputType="date"
+            android:padding="16dp"
+            android:layout_margin="7dp"
+            android:textStyle="bold"
+            android:layout_weight="5"
+            />
+
+            <ImageView
+                android:id="@+id/imgDate"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/imgdesc2"
+                android:onClick="obtenerFecha"
+                android:src="@drawable/calendario" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInpElCosto"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:hint="@string/inpCostoPlanta"
+            android:textColorHint="@color/dark_green"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="24dp"
+            app:boxCornerRadiusTopStart="24dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="21"
+            app:endIconMode="clear_text"
+            app:helperText="Costo Árbol"
+            app:helperTextTextColor="@color/dark_green"
+            app:startIconDrawable="@drawable/pesos2"
+            app:startIconTint="@color/dark_green"
+            tools:ignore="TextSizeCheck">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inpCostoArbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textColor="@color/dark_green"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inpLaZona"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:hint="@string/etxZonaMasPlantas"
+            android:textColorHint="@color/dark_green"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="24dp"
+            app:boxCornerRadiusTopStart="24dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            app:endIconMode="clear_text"
+            app:helperText="Zona con mayor número de árboles"
+            app:helperTextTextColor="@color/dark_green"
+            app:startIconDrawable="@drawable/zonas"
+            app:startIconTint="@color/dark_green"
+            android:layout_marginTop="7dp"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inpZona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInpElArea"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:hint="@string/inpCostoPlanta"
+            android:textColorHint="@color/dark_green"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="24dp"
+            app:boxCornerRadiusTopStart="24dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="21"
+            app:endIconMode="clear_text"
+            app:helperText="Área de siembra de árboles"
+            app:helperTextTextColor="@color/dark_green"
+            app:startIconDrawable="@drawable/siembra"
+            app:startIconTint="#1A700A"
+            tools:ignore="TextSizeCheck">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inpArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textColor="@color/dark_green"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/imgInicio"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/inicio"
+            android:layout_marginStart="150dp"
+            android:translationY="150dp"
+            android:scaleType="centerCrop"/>
+        <Button
+            android:id="@+id/btnGuardar_arbol"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:text="@string/btn_arbol"
+            android:background="@drawable/btn1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="7dp"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/arbol1"
+            android:layout_marginTop="16dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
