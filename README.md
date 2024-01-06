@@ -3,7 +3,7 @@
 # Tecnología - Cesar Forero y Erwin Ferreira
 # *Java
 # * Android App
-|   Nombres   ||   Apellidos   |
-|_____________||_______________|
-|   Erwin  A  ||   Ferreira    |
+|  Nombres   |   Apellidos   |
+|____________|_______________|
+|   Erwin  A |   Ferreira    |
 
