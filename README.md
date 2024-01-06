@@ -3,7 +3,8 @@
 # Tecnología - Cesar Forero y Erwin Ferreira
 # *Java
 # * Android App
-|   Erwin  A |   Ferreira    |
-|____________|_______________|
-|   Erwin  A |   Ferreira    |
-|____________|_______________|
+
+| Erwin A | Ferreira |
+| _______ | ________ |
+| Erwin A | Ferreira |
+| _______ | ________ |
